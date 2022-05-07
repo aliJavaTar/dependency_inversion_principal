@@ -5,5 +5,3 @@ public interface Switchable {
 
     void turnOff();
 }
-
-// dependency inversion principal
