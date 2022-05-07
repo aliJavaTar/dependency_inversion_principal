@@ -16,14 +16,13 @@ public class ElectricPowerSwitch implements Switch {
 
     @Override
     public void press() {
-      boolean checkOn = isOn();
-      if (checkOn)
-      {
-          client.turnOff();
-          this.on=false;
-      }else {
-          client.turnOn();
-          this.on=true;
-      }
+        boolean checkOn = isOn();
+        if (checkOn) {
+            client.turnOff();
+            this.on = false;
+        } else {
+            client.turnOn();
+            this.on = true;
+        }
     }
 }
